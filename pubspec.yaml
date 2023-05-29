@@ -1,0 +1,31 @@
+name: nekoton_flutter
+description: Flutter plugin for TON wallets core
+version: 0.0.1
+homepage: "https://github.com/broxus/nekoton-flutter"
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  args: ^2.4.1
+  async: ^2.11.0
+  ffi: ^2.0.2
+  flutter:
+    sdk: flutter
+  freezed_annotation: ^2.2.0
+  json_annotation: ^4.8.1
+  rxdart: ^0.27.7
+  tuple: ^2.0.1
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.broxus.nekoton_flutter
+        pluginClass: NekotonFlutterPlugin
+      ios:
+        pluginClass: NekotonFlutterPlugin
+
+  assets:
+    - assets/
+    - assets/js/
